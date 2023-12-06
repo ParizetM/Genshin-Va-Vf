@@ -27,3 +27,11 @@ h1 {
     text-align: center;
     border-radius: 10px;
 }
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+nav {
+    padding: 0px;
+}
+body { padding-top: 56px; }
