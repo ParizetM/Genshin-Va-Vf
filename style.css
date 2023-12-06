@@ -17,6 +17,17 @@ body {
     border-style: solid;
     color: #FFAFCC;
 }
+#button_search {
+    background-color: #FFAFCC;
+    border-color: #FFAFCC;
+    color: #fadce8;
+}
+#button_search:hover {
+    border-color: #FFAFCC;
+    border-style: solid;
+    color: #FFAFCC;
+}
+
 h1 {
     text-align: center;
     padding-bottom: 150px;
