@@ -2,7 +2,9 @@
     font-family: 'HYWenHei-85W';
     src: url('zh-cn.ttf') format('truetype');
 }
-
+.navbar {
+    background: linear-gradient(to bottom,black, #0010a3c4);
+}
 body {
     font-family: 'HYWenHei-85W', sans-serif;
     background-color: #ffe8f1;
@@ -45,4 +47,14 @@ h1 {
 nav {
     padding: 0px;
 }
-body { padding-top: 56px; }
+body {
+    margin: 0px;
+}
+/*body { padding-top: 56px; }*/
+.container {
+    max-width: 100%;
+    padding: 0px 0px;
+}
+.dropdown-menu {
+    background-color: #ffffff9f;
+}
