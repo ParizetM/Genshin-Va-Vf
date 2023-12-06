@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'HYWenHei-85W';
+    src: url('zh-cn.ttf') format('truetype');
+}
+
+body {
+    font-family: 'HYWenHei-85W', sans-serif;
+    background-color: #ffe8f1;
+}
+.navbar button {
+    background-color: #FFAFCC;
+    border-color: #FFAFCC;
+    color: #fadce8;
+}
+.navbar button:hover {
+    border-color: #FFAFCC;
+    border-style: solid;
+    color: #FFAFCC;
+}
+h1 {
+    text-align: center;
+    padding: 150px;
+}
+.carousel-caption {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
