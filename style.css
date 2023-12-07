@@ -30,10 +30,31 @@ body {
     border-style: solid;
     color: #FFAFCC;
 }
-
-h1 {
+.carousel {
+    background-color: #ffbfd7;
+    margin-bottom: 50px;
+}
+.carousel-control-next {
+    background-color: rgba(93, 198, 236, 0.237);
+    border-bottom-left-radius: 1000px;
+    border-top-left-radius: 1000px;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100px;
+}
+.carousel-control-prev {
+    background-color: rgba(93, 198, 236, 0.2);
+    border-bottom-right-radius: 1000px;
+    border-top-right-radius: 1000px;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100
+}
+.h1_base {
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 10vw;
 }
 .carousel-caption {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -88,6 +109,9 @@ footer {
         
 }
 .footer_text {
+    width: 1300px;
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
     margin-top: 80px;
     margin-bottom: 100px;
     text-align: center;
@@ -96,15 +120,26 @@ footer {
 .footer_text a:hover {
     filter: brightness(1.5);
 }
+.footer_text a {
+    margin: 0px 3vw;
+}
 .asso {
     text-align: center;
     color: white;
     font-family: sans-serif;
 }
+.footer_text a img {
+    max-height: 30px;
+    padding-bottom: 3px;
+}
+
+/* #region plansite */
+
 .liste_plan {
     margin-top: 150px;
     margin-left: 10vw;
     padding-bottom: 0%;
+    margin-bottom: 80px;
 }
 .liste_plan h1 {
     font-size: 3em;
@@ -117,4 +152,42 @@ footer {
 }
 .liste_plan li a {
     font-size: 1.8em;
+}
+/* #endregion plansite */
+
+@media screen and (max-width: 600px) {
+    .footer_text {
+        grid: auto auto auto / auto;
+        text-align: left;
+    }
+    .footer_text a {
+        margin: 0px 0vw;
+    }
+    .liste_plan li a {
+        font-size: 1.5em;
+    }
+    .liste_plan h1 {
+        font-size: 2.5em;
+    }
+    .tiktok_preview_main div img {
+        margin-left: 0px;
+    }
+}
+.tiktok_preview_main div img{
+    margin-left: 10vw;
+}
+.tiktok_preview_main h1 {
+    white-space: pre-wrap;
+    padding-top: 10vw;
+    font-size: 5vw;
+    margin-left: 2vw;
+}
+.tiktok_preview_main div h3 {
+    font-size: 2vw;
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+.tiktok_logo_square{
+    height: 10vw;
+    margin-left: 0%!important;
 }
