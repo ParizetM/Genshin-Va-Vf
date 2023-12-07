@@ -188,6 +188,9 @@ footer {
     margin-left: 2vw;
 }
 .tiktok_logo_square{
-    height: 10vw;
-    margin-left: 0%!important;
+    height: 8vw;
+    margin-left: 1vw!important;
+}
+.tiktok_preview_main {
+    margin-bottom: 5vw;
 }
