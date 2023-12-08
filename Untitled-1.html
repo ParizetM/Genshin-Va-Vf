@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma page de contact</title>
+  <style>
+    /* En-tête */
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+/* Corps de la page */
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Formulaire */
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid #000000;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0000ff;
+}
+
+/* Pied de page */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Image de fond */
+
+.bg-image {
+  background-image: url("https://images.unsplash.com/photo-1640251877685-598a6e153910?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Animations */
+
+.form-group:hover {
+  box-shadow: 0 0 5px #000000;
+}
+
+button:hover {
+  background-color: #0000ff;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contactez-nous</h1>
+  </header>
+  <main>
+    <form action="mailto:contact@monsite.fr" method="post">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2023, Mon site
+  </footer>
+</body>
+</html>

@@ -2,13 +2,43 @@
     font-family: 'HYWenHei-85W';
     src: url('zh-cn.ttf') format('truetype');
 }
+html {
+    font-size: 1.5vw;
+}
 .navbar {
     background: linear-gradient(to bottom,black, #0010a3c4);
 }
 body {
     font-family: 'HYWenHei-85W', sans-serif;
-    background-color: #ffe8f1;
+    background-color: #ffe8f1;}
+h1 {
+    text-align: center;
+    padding-bottom: 10vw;
+    font-size: min(5vw,72px);
 }
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.2em;
+}
+.invis_text {
+    color: rgba(0, 0, 0, 0);
+}
+.haut_de_page {
+    background-image: url(media/haut_de_page.png);
+    width: 100%;
+    height: 341px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .navbar button {
     background-color: #FFAFCC;
     border-color: #FFAFCC;
@@ -52,10 +82,7 @@ body {
     margin-bottom: auto;
     width: 100
 }
-.h1_base {
-    text-align: center;
-    padding-bottom: 10vw;
-}
+
 .carousel-caption {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     width: 400px;
@@ -84,7 +111,8 @@ body {
 }
 .footer_reseaux {
     background-color: #111111;
-padding: 20px;
+    padding: 20px 0px;
+    width: 100vw;
 
 }
 .footer_reseaux a {
@@ -102,6 +130,7 @@ padding: 20px;
 }
 footer {
     background-color: #000;
+    overflow: hidden;
 }
 .footer_text  a{
         color: #575757;
@@ -136,7 +165,6 @@ footer {
 /* #region plansite */
 
 .liste_plan {
-    margin-top: 150px;
     margin-left: 10vw;
     padding-bottom: 0%;
     margin-bottom: 80px;
@@ -149,6 +177,7 @@ footer {
 }
 .liste_plan li:has(h1) {
     list-style-type: none;
+    margin-left: -1vw;
 }
 .liste_plan li a {
     font-size: 1.8em;
@@ -173,17 +202,18 @@ footer {
         margin-left: 0px;
     }
 }
+/* #region tiktok_preview_main */
 .tiktok_preview_main div img{
     margin-left: 10vw;
 }
 .tiktok_preview_main h1 {
     white-space: pre-wrap;
     padding-top: 10vw;
-    font-size: 5vw;
     margin-left: 2vw;
+    text-align: left;
+    padding-bottom: 0vw;
 }
 .tiktok_preview_main div h3 {
-    font-size: 2vw;
     margin-top: 3vw;
     margin-left: 2vw;
 }
@@ -194,3 +224,147 @@ footer {
 .tiktok_preview_main {
     margin-bottom: 5vw;
 }
+.a_tiktok_logo_square:hover {
+    filter:opacity(0.7);
+}
+/* #endregion tiktok_preview_main */
+
+/* #region Contact */
+
+.form_card_contact {
+    background-color: #d9c8e8;
+    margin-bottom: 8vw;
+}
+ .form_card_contact .card-header {
+    background-color: #c9b5da;
+ }
+.form_card_contact input::placeholder,.form_card_contact textarea::placeholder {
+    color: #919191;
+}
+.form_card_contact input,.form_card_contact textarea {
+    background-color: #c2def7;
+}
+
+.form_card_contact .card-body {
+    display: grid;
+    grid: auto auto auto auto auto/auto auto;
+    gap: 2vw;
+}
+.contact_title h1 {
+    padding-bottom: 0;
+    margin: 0;
+}
+.contact_title  img{
+    width: 55vw;
+    padding-bottom: 0;
+    margin: 0;
+    margin-top: -1vw;
+}
+.contact_title {
+    margin-bottom: 10vw;
+}
+.largeur2grid1 {
+    grid-column: 1/span 2;
+}
+.largeur3grid1 {
+    grid-column: 1/span 3;
+}
+.radios_contact {
+    margin:0 0;
+    display: grid;
+    grid: auto auto / auto auto auto;
+    margin-right: auto;
+}
+.radios_contact h6{
+    grid-row: 1;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.submit_contact {
+    grid-row: 6;
+    background-color: #c9b5da;
+}
+.submit_contact:hover {
+    background-color: #c9b5da;
+    filter: brightness(0.9);
+}
+
+/* #endregion Contact */
+
+/* #region qui sommes nous */
+
+.container_story {
+    
+    margin: 0;
+    margin-top: 5vw;
+    width: 100%;
+    background-color: #A2D2FF;
+    overflow: hidden;
+    margin-bottom: 5vw;
+    padding-bottom: 3vw;
+}
+.story_img {
+    width: 40vw;
+    border-radius: 20px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.semi_paragraph {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    min-width: 200px;
+}
+.full_paragraph {
+    margin-left: 2vw;
+    margin-right: 4vw;
+}
+.container_story div h3 {
+    margin-top: 2vw;
+}
+.container_valeurs {
+    
+    margin: 0;
+    margin-top: 5vw;
+    overflow: hidden;
+    margin-bottom: 5vw;
+    padding-bottom: 3vw;
+}
+.container_valeurs div div ul li:has(h4){
+    margin-left: -1vw;
+    list-style-type: none;
+}
+.container_valeurs div div ul li:has(:not(h4)){
+    margin-top: 1vw;
+}
+.valeurs_img {
+    width: 40vw;
+    border-radius: 20px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.container_valeurs div div ul{
+    margin-left: 1vw;
+}
+.card_team {
+    background-color: #A2D2FF;
+    border-top-left-radius: 210px;
+    border-top-right-radius: 210px;
+    margin-bottom: 8vw;
+}
+.card_team img {
+    border-radius: 100%;
+    padding: 0.2vw;
+}
+.card_team h5 {
+    color: #3f474f;
+}
+
+/* #endregion qui sommes nous */
+
+
