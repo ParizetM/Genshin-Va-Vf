@@ -318,8 +318,8 @@ footer {
     min-width: 200px;
 }
 .full_paragraph {
-    margin-left: 2vw;
-    margin-right: 4vw;
+    margin-left: 8vw;
+    margin-right: 10vw;
 }
 .container_story div h3 {
     margin-top: 2vw;
@@ -366,5 +366,74 @@ footer {
 }
 
 /* #endregion qui sommes nous */
+
+/* #region bandes rythmo */
+
+.slider-container {
+    margin-top: 3vw;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 2vw;
+    background-color: #c9b5da;
+    border-radius: 10px;
+
+}
+.slider-content {
+    display: flex;
+
+
+}
+.slider-content iframe {
+    width: 32vw;
+    height: 11vw;
+    margin: 1vw;
+    border-radius: 10px;
+}
+.slider-content iframe:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.5);
+    transition: 250ms;
+}
+.slider-container h4 {
+    margin-top: -5px;
+}
+.playlist div{
+    background-color: #0f0f0f;
+    width: 30vw;
+    border: none;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.playlist div div h4 {
+    color: #ededed;
+}
+.playlist div div p {
+    color: #a1a1a1;
+}
+.playlist {
+    display: block;
+    width: 30vw;
+    text-decoration: none;
+}
+.playlist:hover {
+    filter: brightness(0.8);
+}
+.playlist div img{
+    border-radius: 20px;
+}
+.ytb_colored {
+    width: auto;
+}
+.ytb_colored img {
+    width: 15vw;
+}
+.ytb_colored img:hover {
+    filter: brightness(0.8);
+
+}
+/* #endregion bandes rythmo */
+
 
 
