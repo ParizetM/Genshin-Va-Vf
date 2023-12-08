@@ -99,7 +99,6 @@ nav {
 body {
     margin: 0px;
 }
-/*body { padding-top: 56px; }*/
 .container {
     padding: 0px 0px;
 }
@@ -456,6 +455,10 @@ footer {
     --bs-accordion-btn-bg: #c9b5da;
     --bs-accordion-active-bg: #ccbddb;
   --bs-accordion-bg: #d9c8e8;
+  --accordion-color: #111111;
+}
+.accordion-button:not(.collapsed) {
+    color: #3f474f;
 }
 .form_card_demande {
     background-color: #d9c8e8;
@@ -525,6 +528,17 @@ footer {
     filter: brightness(0.9);
 }
 /* #endregion demande bandes rythmo */
+
+/* #region dépot audition */
+
+.salon_audition {
+    background-color: #36373c;
+    color: #959ba3;
+    border-radius: 10px;
+}
+
+/* #endregion dépot audition */
+
 
 
 
