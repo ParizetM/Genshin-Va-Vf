@@ -357,6 +357,11 @@ footer {
     border-top-right-radius: 210px;
     margin-bottom: 8vw;
 }
+.card_team:hover{
+    transform: scale(1.05);
+    z-index: 100;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.5);
+}
 .card_team img {
     border-radius: 100%;
     padding: 0.2vw;
@@ -434,6 +439,93 @@ footer {
 
 }
 /* #endregion bandes rythmo */
+
+/* #region demande bandes rythmo */
+
+.ac_body_ul ul li:has(h4){
+    margin-left: -1vw;
+    list-style-type: none;
+}
+.ac_body_ul ul li:has(:not(h4)){
+    margin-top: 1vw;
+}
+.ac_body_ul ul{
+    margin-left: 1vw;
+}
+.accordion {
+    --bs-accordion-btn-bg: #c9b5da;
+    --bs-accordion-active-bg: #ccbddb;
+  --bs-accordion-bg: #d9c8e8;
+}
+.form_card_demande {
+    background-color: #d9c8e8;
+    margin-bottom: 1vw;
+}
+ .form_card_demande .card-header {
+    background-color: #c9b5da;
+ }
+.form_card_demande input::placeholder,.form_card_demande textarea::placeholder {
+    color: #919191;
+}
+.form_card_demande input,.form_card_demande textarea {
+    background-color: #c2def7;
+}
+
+.form_card_demande .card-body {
+    display: grid;
+    grid: auto auto auto auto auto/auto auto;
+    gap: 2vw;
+}
+.contact_title h1 {
+    padding-bottom: 0;
+    margin: 0;
+}
+.contact_title  img{
+    width: 55vw;
+    padding-bottom: 0;
+    margin: 0;
+    margin-top: -1vw;
+}
+.contact_title {
+    margin-bottom: 10vw;
+}
+.largeur2grid1 {
+    grid-column: 1/span 2;
+}
+.largeur3grid1 {
+    grid-column: 1/span 3;
+}
+.radios_contact {
+    margin:0 0;
+    display: grid;
+    grid: auto auto / auto auto auto;
+    margin-right: auto;
+}
+.radios_contact h6{
+    grid-row: 1;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.submit_contact {
+    grid-row: 6;
+    background-color: #c9b5da;
+}
+.submit_contact:hover {
+    background-color: #c9b5da;
+    filter: brightness(0.9);
+}
+.custom-tooltip {
+    --bs-tooltip-bg: #c9b5da;
+    --bs-tooltip-color: #111111;
+  }
+.select_demande {
+    background-color: #c2def7;
+}
+.select_demande:hover {
+    filter: brightness(0.9);
+}
+/* #endregion demande bandes rythmo */
+
 
 
 
